@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { FormLoginPage } from '../pages/FormLogin.pages.js'
+import { FormLoginPage } from '../../pages/FormLogin.pages.js'
 
 describe('Form Login', () => {
   const formLoginPage = new FormLoginPage()
