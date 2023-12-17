@@ -5,9 +5,7 @@ describe('Form Login', () => {
   const formLoginPage = new FormLoginPage()
   it('test POM', () => {
   formLoginPage.open()
-  formLoginPage.elements.emailInput().type('qa@mailinator.com') 
-  formLoginPage.elements.passwordInput().type('qwerty')
-  formLoginPage.elements.logInButton().click()
-
+  formLoginPage.elements.forgotPasswordButton().click()
+  formLoginPage.elements.registerButton().click()
 })
 })
