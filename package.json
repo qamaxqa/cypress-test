@@ -33,7 +33,7 @@
     "report:merge": "npx mochawesome-merge 'cypress/results/*.json' -o 'cypress/merged-report/mochawesome.json'",
     "report:html": "npx marge cypress/merged-report/mochawesome.json",
     "report:delete": "rmdir /S /Q cypress\\results && mkdir cypress\\results",
-    "cy:run:report": "npm run report:delete && npm run cy:1-getting-started",
+    "cy:run:report": "npm run cy:1-getting-started",
     "report:all": "npm run report:merge && npm run report:html",
     "cy:run:server": "start-test start http-get://localhost:4200/ cy:run:report"
   },
